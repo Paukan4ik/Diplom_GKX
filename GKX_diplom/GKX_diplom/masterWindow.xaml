@@ -1,0 +1,12 @@
+﻿<Window x:Class="GKX_diplom.masterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Виклик майстра" Height="300" Width="300" Closing="Window_Closing" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="171,194,0,0" VerticalAlignment="Top" Width="101" Height="52" Click="Button_Click"/>
+        <Button Content="Замовити" HorizontalAlignment="Left" Margin="20,194,0,0" VerticalAlignment="Top" Width="101" Height="52" Click="Button_Click_1"/>
+        <TextBox x:Name="description" HorizontalAlignment="Left" Height="131" Margin="20,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="252"/>
+        <Label Content="Причина виклику майстра(детально)" HorizontalAlignment="Left" Height="30" Margin="23,6,0,0" VerticalAlignment="Top" Width="249"/>
+
+    </Grid>
+</Window>

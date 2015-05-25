@@ -1,0 +1,30 @@
+﻿<Window x:Class="GKX_diplom.fotgottPass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Нагадування паролю" Height="114.366" Width="300" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" ResizeMode="CanMinimize" Closing="Window_Closing">
+    <Grid>
+        <Button Content="Відправити пароль" HorizontalAlignment="Left" Height="33" Margin="10,35,0,0" VerticalAlignment="Top" Width="272" Click="Button_Click"/>
+        <TextBox Name="email"  HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="272">
+            <TextBox.Resources>
+                <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.4" Stretch="None" AlignmentX="Left" >
+                    <VisualBrush.Visual>
+                        <TextBlock FontStyle="Normal" Text="Ваша електронна пошта" />
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </TextBox.Resources>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                        <Trigger Property="Text" Value="">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+    </Grid>
+</Window>

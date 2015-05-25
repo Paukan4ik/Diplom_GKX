@@ -1,0 +1,40 @@
+﻿<Window x:Name="registerWindow" Title="Реєстрація" x:Class="GKX_diplom.RegisterWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Height="310" Width="300" Closing="Window_Closing" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow" ResizeMode="CanMinimize">
+    <Grid>
+        <Button Name="RegisterBtn" Content="Зареєструватись" HorizontalAlignment="Left" Margin="26,239,0,0" VerticalAlignment="Top" Width="104" Click="RegisterBtn_Click"/>
+        <Button Name="cancelBtn" Content="Назад" HorizontalAlignment="Left" Margin="182,239,0,0" VerticalAlignment="Top" Width="75" Click="cancelBtn_Click"/>
+        <TextBox Name="number" HorizontalAlignment="Left" Height="32" Margin="21,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="99" TextAlignment="Center" Visibility="Hidden" MaxLength="11" MaxLines="1"/>
+        <TextBox Name="poinetercheck" HorizontalAlignment="Left" Height="32" Margin="132,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="125" TextAlignment="Center" Visibility="Hidden" MaxLength="11" MaxLines="1" ToolTip="Останні показники по електропостачанню">
+            <TextBox.Resources>
+                <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.4" Stretch="None" AlignmentX="Left" >
+                    <VisualBrush.Visual>
+                        <TextBlock FontStyle="Normal" Text="Останні показники ЕП" />
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </TextBox.Resources>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                        <Trigger Property="Text" Value="">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <PasswordBox Name="passinput" HorizontalAlignment="Left" Margin="132,24,0,0" VerticalAlignment="Top" Width="125" Height="32" RenderTransformOrigin="0.472,0.031"/>
+        <PasswordBox Name="requestpass" HorizontalAlignment="Left" Margin="132,71,0,0" VerticalAlignment="Top" Width="125" Height="32" RenderTransformOrigin="0.472,0.031"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Height="32" Margin="21,24,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Підтвердження" HorizontalAlignment="Left" Height="32" Margin="21,71,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.586,1.514"/>
+        <Label Name="type" Content="Label" HorizontalAlignment="Left" Height="32" Margin="26,147,0,0" VerticalAlignment="Top" Width="231" Visibility="Hidden" FontSize="12"/>
+        <RadioButton Content="Користувач" HorizontalAlignment="Left" Height="22" Margin="26,120,0,0" VerticalAlignment="Top" Width="104" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Працівник ЖЕК" HorizontalAlignment="Left" Height="22" Margin="135,120,0,0" VerticalAlignment="Top" Width="122" Checked="RadioButton_Checked_1"/>
+
+    </Grid>
+</Window>

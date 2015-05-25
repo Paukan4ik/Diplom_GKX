@@ -1,0 +1,34 @@
+﻿<Window x:Class="GKX_diplom.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Вікно користувача" Height="195" Width="313" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+    <Grid>
+        <Button Name="Billing" Content="" HorizontalAlignment="Left" Height="57" Margin="10,10,0,0" VerticalAlignment="Top" Width="54" ToolTip="Сформувати рахунок" Click="Billing_Click">
+        <Button.Background>
+            <ImageBrush ImageSource="D:\GitHubProj\Diplom_GKX\GKX_diplom\images\bill.png"/>
+        </Button.Background>
+        </Button>
+        <Button Name="LogOut" Content="" HorizontalAlignment="Left" Height="57" Margin="230,10,0,0" VerticalAlignment="Top" Width="54" ToolTip="Вихід" Click="LogOut_Click">
+        <Button.Background>
+            <ImageBrush ImageSource="D:\GitHubProj\Diplom_GKX\GKX_diplom\images\logout.png"/>
+        </Button.Background>
+        </Button>
+        <Button Name="AddPointers" Content="" HorizontalAlignment="Left" Height="57" Margin="84,10,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.5,0.5" ToolTip="Внести показники" Click="AddPointers_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\GitHubProj\Diplom_GKX\GKX_diplom\images\addpointer.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Аварійні та планові роботи" HorizontalAlignment="Left" Height="57" Margin="10,87,0,0" VerticalAlignment="Top" Width="197" Click="Button_Click"/>
+        <Button Name="Calc" Content="" HorizontalAlignment="Left" Height="57" Margin="153,10,0,0" VerticalAlignment="Top" Width="54" ToolTip="Калькулятор тарифів" Click="Calc_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\GitHubProj\Diplom_GKX\GKX_diplom\images\сalculator.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="MasterCall" Content="" HorizontalAlignment="Left" Height="57" Margin="230,87,0,0" VerticalAlignment="Top" Width="54" ToolTip="Виклик майстра" Click="MasterCall_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\GitHubProj\Diplom_GKX\GKX_diplom\images\master.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="GKX_diplom.addPointers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Внесення показників" Height="309" Width="300" Closing="Window_Closing" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox x:Name="Epointer" HorizontalAlignment="Left" Height="23" Margin="10,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" TextInput="Epointer_TextInput"/>
+        <TextBox x:Name="Gvpointer" HorizontalAlignment="Left" Height="23" Margin="10,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" TextInput="Gvpointer_TextInput"/>
+        <TextBox x:Name="Xvpointer" HorizontalAlignment="Left" Height="23" Margin="10,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" TextInput="Xvpointer_TextInput"/>
+        <Button x:Name="addPointerBtn" Content="Внести показники" HorizontalAlignment="Left" Height="42" Margin="10,223,0,0" VerticalAlignment="Top" Width="134" Click="addPointerBtn_Click"/>
+        <Button x:Name="CancelBtn" Content="Назад" HorizontalAlignment="Left" Height="42" Margin="174,223,0,0" VerticalAlignment="Top" Width="100" Click="CancelBtn_Click"/>
+        <Label Content="Показники по електропостачанню" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="264"/>
+        <Label Content="Показники по гарячому водопостачанню" HorizontalAlignment="Left" Height="25" Margin="10,79,0,0" VerticalAlignment="Top" Width="264"/>
+        <Label Content="Показники по холодному водопостачанню" HorizontalAlignment="Left" Height="25" Margin="10,150,0,0" VerticalAlignment="Top" Width="264"/>
+
+    </Grid>
+</Window>

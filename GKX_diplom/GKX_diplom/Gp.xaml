@@ -1,0 +1,11 @@
+﻿<Window x:Class="GKX_diplom.Gp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Аварійні та планові роботи" Height="422" Width="638" Closing="Window_Closing" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+
+        <DataGrid x:Name="gplist" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="311" Width="593" AutoGenerateColumns="True"/>
+        <Button x:Name="backBtn" Content="Назад" HorizontalAlignment="Left" Height="30" Margin="10,341,0,0" VerticalAlignment="Top" Width="603" Click="backBtn_Click"/>
+
+    </Grid>
+</Window>

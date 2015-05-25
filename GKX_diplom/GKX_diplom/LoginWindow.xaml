@@ -1,0 +1,23 @@
+﻿<Window x:Name="LoginWindow" x:Class="GKX_diplom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Вхід" Height="155.672" Width="356.522" Closing="LoginWindow_Closing" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Button x:Name="LoginBtn" Content="ВХІД" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="255" Height="20" Click="LoginBtn_Click"/>
+        <Label Content="Логін" HorizontalAlignment="Left" Height="30" Margin="10,5,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Height="30" Margin="167,5,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="LoginBox" HorizontalAlignment="Left" Height="23" Margin="10,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Особовий рахунок/особистий номер" MaxLength="11"/>
+        <PasswordBox x:Name="passwordB" HorizontalAlignment="Left" Margin="167,40,0,0" VerticalAlignment="Top" Width="98" Height="23" KeyUp="passwordB_KeyUp"/>
+        <Button x:Name="forgotPassword" Content="" HorizontalAlignment="Left" Height="43" Margin="288,10,0,0" VerticalAlignment="Top" Width="40" ToolTip="Нагадати пароль!" Click="forgotPassword_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\GitHubProj\Diplom_GKX\GKX_diplom\images\forgotpass.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="registerBtn" Content="" HorizontalAlignment="Left" Height="43" Margin="288,58,0,0" VerticalAlignment="Top" Width="40" ToolTip="Реєстрація" RenderTransformOrigin="0.35,1.767" Click="registerBtn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\GitHubProj\Diplom_GKX\GKX_diplom\images\register.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
